@@ -7,9 +7,9 @@ A forensic scanner for unix systems for system analysis using a bash script.
 ![Screen capture of the running program](./printscreen.png "Screen capture")
 
 ## Usage
-`. / scanfo.sh`
+`. /scanfo.sh`
 
-After execution, a *** info.txt *** file will be generated.
+After execution, a ***info.txt*** file will be generated.
 
 ## What kind of data is collected?
 * Which system is being used
@@ -36,5 +36,5 @@ After execution, a *** info.txt *** file will be generated.
 * Checks RootKits on the System
 
 
-### ** ATTENTION **
+### **ATTENTION**
 This script was tested on Zorin OS 15.3
