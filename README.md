@@ -3,6 +3,9 @@ Scanner Forensic for Unix Systems
  
 Um scanner forense para sistemas unix para analises de sistemas utilizando um script em bash.
 
+English version is [here](https://github.com/LSouzaDev/scanfo/blob/main/README_en.md)
+
+
 ## Captura de Tela
 ![Captura de Tela do programa em execução](./printscreen.png "Captura de Tela")
 
