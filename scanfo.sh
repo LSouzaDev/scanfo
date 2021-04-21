@@ -3,25 +3,26 @@
 # Script para coleta de informações do sistema
 #
 # Autor: Luiz Filipe Souza (lsouzadev)
-# Versão: 1.0
+# Versão: 1.1
 # Github: https://github.com/lsouzadev/scanfo
 #
 # LICENSE: MIT
 #
-filename="sysinfo.txt"
+filename="info.txt"
 echo -e "\n███████╗ ██████╗ █████╗ ███╗   ██╗███████╗ ██████╗ "
 echo -e "██╔════╝██╔════╝██╔══██╗████╗  ██║██╔════╝██╔═══██╗"
 echo -e "███████╗██║     ███████║██╔██╗ ██║█████╗  ██║   ██║"
 echo -e "╚════██║██║     ██╔══██║██║╚██╗██║██╔══╝  ██║   ██║"
 echo -e "███████║╚██████╗██║  ██║██║ ╚████║██║     ╚██████╔╝"
 echo -e "╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝      ╚═════╝ "
+echo -e "//////////////////// Versão 1.1 ////////////////////" | tee -a $filename
 echo -e "=================== DADOS DO SISTEMA ALVO ===================" | tee -a $filename
 date "+[+] Data e Hora da Coleta: %d/%m/%Y %H:%M" | tee -a $filename
 echo -e "[+] Sistema: $(uname)" | tee -a $filename
 echo -e "[+] Kernel: $(uname -r)" | tee -a $filename
 echo -e "[+] Arquitetura: $(uname -m)" | tee -a $filename
 echo -e "[+] Usuário (Nome): $(echo $USER)" | tee -a $filename
-echo -e "[+] Usuário (ID): $(echo id -u)" | tee -a $filename
+echo -e "[+] Usuário (ID): $(id -u)" | tee -a $filename
 echo -e "[+] Usuário (Pasta): $(echo $HOME)" | tee -a $filename
 echo -e "[+] Endereço IP (Externo/curl/ifconfig.me) : $(curl ifconfig.me)" | tee -a $filename
 echo -e "=================== DISPOSITIVOS CONECTADOS ===================" | tee -a $filename
